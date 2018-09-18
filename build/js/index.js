@@ -18,13 +18,26 @@ $(document).ready(function () {
         return check;
     };
     var mobile = mobilecheck();
+    // var mobile = true;
 
-    $('.enable-on-mobile').hide();
-
-    if (mobile) {
+    
+    if (mobile || window.innerWidth < 479) {
         $('.enable-on-mobile').show();
+        $('.hide-on-mobile').hide();
+        $.scrollify.disable();
     }else{
-        // $.scrollify.disable();
+        $('.enable-on-mobile').hide();
+        $('.hide-on-mobile').show();
     }
 
+    $(window).resize(function() {
+        if (mobile || window.innerWidth < 479) {
+            $('.enable-on-mobile').show();
+            $('.hide-on-mobile').hide();
+            $.scrollify.disable();
+        } else {
+            $('.enable-on-mobile').hide();
+            $('.hide-on-mobile').show();
+        }
+    });
 }); 
