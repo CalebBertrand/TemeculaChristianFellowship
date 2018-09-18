@@ -34,7 +34,6 @@ $(document).ready(function () {
         if (mobile || window.innerWidth < 479) {
             $('.enable-on-mobile').show();
             $('.hide-on-mobile').hide();
-            $.scrollify.disable();
         } else {
             $('.enable-on-mobile').hide();
             $('.hide-on-mobile').show();
