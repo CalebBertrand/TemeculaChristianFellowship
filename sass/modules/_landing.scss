@@ -1,0 +1,122 @@
+* {
+    color: $text-color;
+    text-shadow: 0px 0px 16px rgba(37, 37, 37, 0.6);
+}
+
+.grid-frame {
+    z-index: 1;
+}
+
+@media not all and (max-width: $mobile-size) {
+    #section-1 {
+        @include backgroundImage('../imgs/mountains.jpg');
+    }
+    #section-2 {
+        @include backgroundImage('../imgs/bibleswag.jpg');
+    }
+    #section-3 {
+        @include backgroundImage('../imgs/biblestudy.jpg');
+    }
+    #section-4 {
+        @include backgroundImage('../imgs/woodwall.jpg');
+    }
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+.section {
+    background-attachment: fixed;
+    h1 {
+        font-size: 4.5rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 3.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 2.5rem;
+        }
+    }
+    h2 {
+        font-size: 3rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.9rem;
+        }
+    }
+    h3 {
+        font-size: 3rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.7rem;
+        }
+    }
+    h4 {
+        font-size: 2rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.6rem;
+        }
+    }
+    h5 {
+        font-size: 1.7rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.4rem;
+        }
+    }
+    h6 {
+        font-size: 1.5rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.3rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .button {
+        text-size-adjust: 160%;
+        text-shadow: none;
+    }
+}
+.hero-centered {
+    // @media screen and (max-width: $desktop-size) {
+        padding-bottom: 150px;
+    // }
+    // @media screen and (max-width: $mobile_size) {
+    //     padding-bottom: 25px;
+    // }
+    // @media screen and (min-width: $tablet-size) {
+    //     padding-bottom: 75px;
+    // }
+}
+
+h1.hero-header {
+    @media screen and (max-width: $tablet-size) {
+    }
+    @media screen and (max-width: $mobile_size) {
+    }
+}
+
+#support-info {
+    width: 85%;
+    height: 85%;
+    border-radius: 7px;
+    padding: 2.5%;
+    h1, h2, h3, h4, h5, h6, p {
+        // color: $background-color;
+    }
+}

@@ -1,0 +1,97 @@
+@mixin backgroundImage($img, $gradient-color:null, $gradient-opacity:0.6, $gradient-direction:to bottom) {
+    background-image: url($img);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @if $gradient-color {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient($gradient-direction, #ffffff, $gradient-color);
+            opacity: $gradient-opacity; 
+        }
+        position: relative;
+    }
+}
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin lowresmonitors{
+        @media screen and (max-width: 1350px){ @content;}
+}
+
+@mixin tablets{
+        @media screen and (max-width: 1100px){ @content; }
+}
+
+@mixin phones{
+        @media screen and (max-width: 720px){ @content; }
+}
+
+* { box-sizing: border-box; font-family: $default-font; }
+body { margin: 0; padding: 0; background-color: $background-color; }
+ul { list-style-type: none; }
+a { color: $contrast-one; }
+h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+}
+
+.bigger {
+	font-size: 1.2em;
+}
+
+.fullscreen {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.video-container .video {
+	min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+	z-index: -100;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	background-image: url("");
+	background-position: center;
+	background-size: cover;
+}
+
+.radius, .radius {
+    border-radius: 3px; 
+}
+.round, .round {
+    border-radius: 1000px; 
+}
+
+.padlight {
+    padding: 5px;
+}
+
+.fullheight {
+    height: 100%;
+    * {
+        height: auto;
+    }
+}
+
+.block {
+    // background-color: rgba(254,254,254, 0.93);
+    background-color: transparent;
+    // box-shadow: 10px 10px 75px 0px rgba(44, 44, 44, 0.8);
+}
+
+.button.white, .button.white:hover {
+    color: rgb(23, 121, 186) !important;
+}

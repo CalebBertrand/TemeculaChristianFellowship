@@ -1,0 +1,8 @@
+@import 'libs/scss/foundation.scss';
+// @import 'libs/foundation.css';
+@import 'variables';
+@import 'base';
+@import 'modules/_landing.scss';
+@import 'modules/_header.scss';
+
+@include foundation-everything;
