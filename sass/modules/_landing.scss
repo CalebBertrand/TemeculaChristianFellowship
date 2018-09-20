@@ -8,18 +8,23 @@
 }
 
 @media not all and (max-width: $mobile-size) {
-    #section-1 {
-        @include backgroundImage('../imgs/mountains.jpg');
+    .section {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
-    #section-2 {
-        @include backgroundImage('../imgs/bibleswag.jpg');
-    }
-    #section-3 {
-        @include backgroundImage('../imgs/biblestudy.jpg');
-    }
-    #section-4 {
-        @include backgroundImage('../imgs/woodwall.jpg');
-    }
+    // #section-1 {
+    //     // @include backgroundImage('../imgs/mountains.jpg');
+    // }
+    // #section-2 {
+    //     @include backgroundImage('../imgs/bibleswag.jpg');
+    // }
+    // #section-3 {
+    //     @include backgroundImage('../imgs/biblestudy.jpg');
+    // }
+    // #section-4 {
+    //     @include backgroundImage('../imgs/woodwall.jpg');
+    // }
 }
 
 .background-image {
