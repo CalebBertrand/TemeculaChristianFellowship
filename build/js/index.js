@@ -20,10 +20,10 @@ $(document).ready(function () {
     var mobile = mobilecheck();
     // var mobile = true;
     function EnableDesktopImages() {
-        $('#section-1').css('background-image', "url('../imgs/mountains.jpg')");
-        $('#section-2').css('background-image', "url('../imgs/bibleswag.jpg')");
-        $('#section-3').css('background-image', "url('../imgs/biblestudy.jpg')");
-        $('#section-4').css('background-image', "url('../imgs/woodwall.jpg')");
+        $('#section-1').css('background-image', "url('imgs/mountains.jpg')");
+        $('#section-2').css('background-image', "url('imgs/bibleswag.jpg')");
+        $('#section-3').css('background-image', "url('imgs/biblestudy.jpg')");
+        $('#section-4').css('background-image', "url('imgs/woodwall.jpg')");
     }
 
     if (mobile || window.innerWidth < 479) {
