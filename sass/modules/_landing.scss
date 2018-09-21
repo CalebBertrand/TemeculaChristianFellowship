@@ -36,7 +36,7 @@
 }
 
 .section {
-    background-attachment: fixed;
+    background-attachment: scroll;
     h1 {
         font-size: 4.5rem;
         @media screen and (max-width: $tablet-size) {
@@ -93,7 +93,6 @@
     }
 
     .button {
-        text-size-adjust: 160%;
         text-shadow: none;
     }
 }

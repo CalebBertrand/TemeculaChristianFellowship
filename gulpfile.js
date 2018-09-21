@@ -6,10 +6,15 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var uglify = require('gulp-uglify');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
         .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest('build/css'))
         .pipe(browserSync.reload({
             stream: true
