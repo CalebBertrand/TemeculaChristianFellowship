@@ -12,7 +12,7 @@ $(document).ready(function () {
     //     // }
     // });
 
-    var mobile = (WURFL.form_factor != ('Desktop' || 'Tablet'));
+    var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
     
     function EnableDesktopImages() {
         $('#section-1').css('background-image', "url('imgs/mountains.jpg')");
