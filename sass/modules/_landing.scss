@@ -37,6 +37,11 @@
 
 .section {
     background-attachment: scroll;
+    
+    h1, h2, h3, h4, h5, h6 {
+        padding-bottom: 12px;
+    }
+    
     h1 {
         font-size: 4.5rem;
         @media screen and (max-width: $tablet-size) {
@@ -74,6 +79,7 @@
         }
     }
     h5 {
+        
         font-size: 1.7rem;
         @media screen and (max-width: $tablet-size) {
             font-size: 1.5rem;
