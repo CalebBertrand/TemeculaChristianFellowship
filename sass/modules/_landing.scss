@@ -13,18 +13,12 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
-    // #section-1 {
-    //     // @include backgroundImage('../imgs/mountains.jpg');
-    // }
-    // #section-2 {
-    //     @include backgroundImage('../imgs/bibleswag.jpg');
-    // }
-    // #section-3 {
-    //     @include backgroundImage('../imgs/biblestudy.jpg');
-    // }
-    // #section-4 {
-    //     @include backgroundImage('../imgs/woodwall.jpg');
-    // }
+    #section-1 {
+        padding-bottom: 50px;
+    }
+    #section-2, #section-3, #section-4 {
+        padding-top: 50px;
+    }
 }
 
 .background-image {
