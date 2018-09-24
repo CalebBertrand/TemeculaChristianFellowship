@@ -29,6 +29,7 @@ $(document).ready(function () {
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
         $.scrollify.disable();
+        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullheight">');
     }else{
         $('.enable-on-mobile').hide();
         $('.hide-on-mobile').show();
