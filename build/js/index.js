@@ -1,16 +1,17 @@
 $(document).ready(function () {
-    //     $('img.square').each(function () {
+    
+    function ToggleMenu() {
+        $("#menu").fadeToggle(600);
+    }
+    
+    ToggleMenu();
 
-    //         var $img = $(this),
-    //             imgWidth = $img.width();
+    $("#hamburger, #x, #menu a").click(function() {
+        ToggleMenu();
+    });
 
-    //             $img.height(imgWidth);
-    //     });
-    // $(window).resize(function() {
-    //     // if ($img) {
-    //     //     $img.height(imgWidth);
-    //     // }
-    // });
+    $(".fullscreen").height(window.innerHeight);
+    $("#menu").css("padding-top", $("header").height());
 
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
     
@@ -38,6 +39,10 @@ $(document).ready(function () {
     }
 
     $(window).resize(function() {
+
+        $(".fullscreen").height(window.innerHeight);
+        $("#menu").css("padding-top", $("header").height() + 45);
+
         if (mobile || window.innerWidth < 479) {
             $('.enable-on-mobile').show();
             $('.hide-on-mobile').hide();

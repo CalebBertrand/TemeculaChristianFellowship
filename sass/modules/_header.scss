@@ -21,20 +21,17 @@ header {
     width: 115px;
     height: 100px;
 
-    @media screen and (max-width: $desktop-size) {
-        width: 11%;
-        height: 11%;
-    }
     @media screen and (max-width: $tablet-size) {
-        width: 14%;
+        width: 14.5%;
         height: 14%;
     }
     @media screen and (max-width: $mobile_size) {
-        display: none;
+        visibility: hidden;
     }
 }
 
 #hamburger {
+    cursor: pointer;
     float: right;
     width: 45px;
     height: 45px;
@@ -42,5 +39,24 @@ header {
     @media screen and (max-width: $mobile_size) {
         width: 35px;
         height: 35px;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.76);
+    padding-right: 4.5%;
+
+    ul {
+        list-style-type:none;
+
+        li a {
+            color: $text-color;
+            font-size: 7vmin;
+        }
+        
     }
 }
