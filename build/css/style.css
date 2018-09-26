@@ -14,21 +14,69 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #3d495a; }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #3d495a; }
+  background-color: #f5f6f8; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    padding-bottom: 6px; }
+  body h1 {
+    font-size: 4.5rem; }
+    @media screen and (max-width: 767px) {
+      body h1 {
+        font-size: 3.5rem; } }
+    @media screen and (max-width: 479px) {
+      body h1 {
+        font-size: 2.5rem; } }
+  body h2 {
+    font-size: 3rem; }
+    @media screen and (max-width: 767px) {
+      body h2 {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 479px) {
+      body h2 {
+        font-size: 1.9rem; } }
+  body h3 {
+    font-size: 3rem; }
+    @media screen and (max-width: 767px) {
+      body h3 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 479px) {
+      body h3 {
+        font-size: 1.7rem; } }
+  body h4 {
+    font-size: 2rem; }
+    @media screen and (max-width: 767px) {
+      body h4 {
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 479px) {
+      body h4 {
+        font-size: 1.6rem; } }
+  body h5 {
+    font-size: 1.7rem; }
+    @media screen and (max-width: 767px) {
+      body h5 {
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 479px) {
+      body h5 {
+        font-size: 1.4rem; } }
+  body h6 {
+    font-size: 1.5rem; }
+    @media screen and (max-width: 767px) {
+      body h6 {
+        font-size: 1.3rem; } }
+    @media screen and (max-width: 479px) {
+      body h6 {
+        font-size: 0.9rem; } }
 
 ul {
   list-style-type: none; }
 
 a {
   color: #3a7fe3; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #f5f6f8; }
 
 .bigger {
   font-size: 1.2em; }
@@ -37,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin-left: 0;
   margin-right: 0; }
+
+.fullheight {
+  height: 100vh; }
+  .fullheight * {
+    height: auto; }
 
 .video-container .video {
   min-width: 100%;
@@ -53,29 +106,14 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   background-size: cover; }
 
-.radius, .radius {
-  border-radius: 3px; }
-
-.round, .round {
-  border-radius: 1000px; }
-
 .padlight {
   padding: 5px; }
-
-.fullheight {
-  height: 100%; }
-  .fullheight * {
-    height: auto; }
 
 .block {
   background-color: transparent; }
 
-.button.white, .button.white:hover {
-  color: #1779ba !important; }
-
 * {
-  color: #f5f6f8;
-  text-shadow: 0px 0px 16px rgba(37, 37, 37, 0.6); }
+  color: #3d495a; }
 
 .grid-frame {
   z-index: 1; }
@@ -97,59 +135,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: -100; }
 
-.section {
+body#landing .section {
   background-attachment: scroll; }
-  .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
-    padding-bottom: 6px; }
-  .section h1 {
-    font-size: 4.5rem; }
-    @media screen and (max-width: 767px) {
-      .section h1 {
-        font-size: 3.5rem; } }
-    @media screen and (max-width: 479px) {
-      .section h1 {
-        font-size: 2.5rem; } }
-  .section h2 {
-    font-size: 3rem; }
-    @media screen and (max-width: 767px) {
-      .section h2 {
-        font-size: 2.5rem; } }
-    @media screen and (max-width: 479px) {
-      .section h2 {
-        font-size: 1.9rem; } }
-  .section h3 {
-    font-size: 3rem; }
-    @media screen and (max-width: 767px) {
-      .section h3 {
-        font-size: 2rem; } }
-    @media screen and (max-width: 479px) {
-      .section h3 {
-        font-size: 1.7rem; } }
-  .section h4 {
-    font-size: 2rem; }
-    @media screen and (max-width: 767px) {
-      .section h4 {
-        font-size: 1.8rem; } }
-    @media screen and (max-width: 479px) {
-      .section h4 {
-        font-size: 1.6rem; } }
-  .section h5 {
-    font-size: 1.7rem; }
-    @media screen and (max-width: 767px) {
-      .section h5 {
-        font-size: 1.5rem; } }
-    @media screen and (max-width: 479px) {
-      .section h5 {
-        font-size: 1.4rem; } }
-  .section h6 {
-    font-size: 1.5rem; }
-    @media screen and (max-width: 767px) {
-      .section h6 {
-        font-size: 1.3rem; } }
-    @media screen and (max-width: 479px) {
-      .section h6 {
-        font-size: 0.9rem; } }
-  .section .button {
+  body#landing .section * {
+    color: #f5f6f8;
+    text-shadow: 0px 0px 16px rgba(37, 37, 37, 0.6); }
+  body#landing .section .button {
     text-shadow: none; }
 
 .hero-centered {
@@ -196,13 +187,16 @@ header {
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.77);
   padding-right: 4.5%; }
   #menu ul {
     list-style-type: none; }
     #menu ul li a {
       color: #f5f6f8;
       font-size: 7vmin; }
+    #menu ul li a.minor {
+      color: #c4c4c4;
+      font-size: 5vmin; }
 
 .custom-button {
   padding: 0.85em 1em;
@@ -230,7 +224,7 @@ header {
 
 .custom-button.white-button:hover {
   background-color: #f5f6f8;
-  color: #3d495a; }
+  color: #3d495a !important; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document

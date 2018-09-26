@@ -34,13 +34,75 @@
         @media screen and (max-width: 720px){ @content; }
 }
 
-* { box-sizing: border-box; font-family: $default-font; }
-body { margin: 0; padding: 0; background-color: $background-color; }
+* { box-sizing: border-box; font-family: $default-font; color: $text-color;}
+body { margin: 0; 
+    padding: 0; 
+    background-color: $background-color; 
+
+    h1, h2, h3, h4, h5, h6 {
+        padding-bottom: 6px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 3.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 2.5rem;
+        }
+    }
+    h2 {
+        font-size: 3rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.9rem;
+        }
+    }
+    h3 {
+        font-size: 3rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.7rem;
+        }
+    }
+    h4 {
+        font-size: 2rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.6rem;
+        }
+    }
+    h5 {
+        
+        font-size: 1.7rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 1.4rem;
+        }
+    }
+    h6 {
+        font-size: 1.5rem;
+        @media screen and (max-width: $tablet-size) {
+            font-size: 1.3rem;
+        }
+        @media screen and (max-width: $mobile_size) {
+            font-size: 0.9rem;
+        }
+    }
+
+
+}
 ul { list-style-type: none; }
 a { color: $contrast-one; }
-h1, h2, h3, h4, h5, h6 {
-    color: $text-color;
-}
 
 .bigger {
 	font-size: 1.2em;
@@ -50,6 +112,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+}
+
+.fullheight {
+    height: 100vh;
+    * {
+        height: auto;
+    }
 }
 
 .video-container .video {
@@ -68,22 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 }
 
-.radius, .radius {
-    border-radius: 3px; 
-}
-.round, .round {
-    border-radius: 1000px; 
-}
-
 .padlight {
     padding: 5px;
-}
-
-.fullheight {
-    height: 100%;
-    * {
-        height: auto;
-    }
 }
 
 .block {
@@ -91,7 +146,4 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     // box-shadow: 10px 10px 75px 0px rgba(44, 44, 44, 0.8);
 }
-
-.button.white, .button.white:hover {
-    color: rgb(23, 121, 186) !important;
-}
+ 

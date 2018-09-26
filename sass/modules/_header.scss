@@ -47,15 +47,19 @@ header {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.77);
     padding-right: 4.5%;
 
     ul {
         list-style-type:none;
 
         li a {
-            color: $text-color;
+            color: $background-color;
             font-size: 7vmin;
+        }
+        li a.minor {
+            color: $contrast-two;
+            font-size: 5vmin;
         }
         
     }
