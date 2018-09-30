@@ -10,10 +10,15 @@ $(document).ready(function () {
         ToggleMenu();
     });
 
-    $(".fullscreen").height(window.innerHeight);
-    $("#menu").css("padding-top", $("header").height());
-
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
+
+    if (WURFL.form_factor == "Smartphone") {
+        $(".fullscreen").height(window.innerHeight * 1.15);
+    }else{
+        $(".fullscreen").height(window.innerHeight);
+    }
+
+    $("#menu").css("padding-top", $("header").height());
     
     function EnableDesktopImages() {
         $('#section-1').css('background-image', "url('imgs/mountains.jpg')");
