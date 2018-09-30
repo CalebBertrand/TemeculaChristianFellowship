@@ -87,7 +87,7 @@ a {
   margin-right: 0; }
 
 .fullheight {
-  height: 100vh; }
+  height: 100%; }
   .fullheight * {
     height: auto; }
 

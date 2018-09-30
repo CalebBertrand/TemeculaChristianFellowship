@@ -19,11 +19,11 @@ $(document).ready(function () {
 
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
 
-    // if (WURFL.form_factor == "Smartphone") { // If on smartphone, make sections 0.15 times taller. Won't apply if scrollify set height is true
-    //     $(".fullscreen").height(window.innerHeight * 1.15);
-    // } else {
-    //     $(".fullscreen").height(window.innerHeight);
-    // }
+    if (WURFL.form_factor == "Smartphone") { // If on smartphone, make sections 0.15 times taller. Won't apply if scrollify set height is true
+        $(".fullscreen").height(window.innerHeight * 1.15);
+    } else {
+        $(".fullscreen").height(window.innerHeight);
+    }
 
     $("#menu").css("padding-top", $("header").height());
 
@@ -35,7 +35,7 @@ $(document).ready(function () {
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
         $.scrollify.disable();
-        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullheight">');
+        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullscreen">');
     } else {
         $('.enable-on-mobile').hide();
         $('.hide-on-mobile').show();
@@ -46,7 +46,7 @@ $(document).ready(function () {
     $(window).resize(function () {
 
         if (!mobile) {
-            // $(".fullscreen").height(window.innerHeight);
+            $(".fullscreen").height(window.innerHeight);
         }
 
 
