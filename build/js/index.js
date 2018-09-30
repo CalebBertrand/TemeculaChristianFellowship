@@ -40,7 +40,12 @@ $(document).ready(function () {
 
     $(window).resize(function() {
 
-        $(".fullscreen").height(window.innerHeight);
+
+        if (!mobile) {
+            $(".fullscreen").height(window.innerHeight);
+        }
+        
+        
         $("#menu").css("padding-top", $("header").height() + 45);
 
         if (mobile || window.innerWidth < 479) {
