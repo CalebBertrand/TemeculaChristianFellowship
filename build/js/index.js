@@ -45,9 +45,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
 
-        if (!mobile) {
-            $(".fullscreen").height(window.innerHeight);
-        }
+        $(".fullscreen").height(window.innerHeight);
 
 
         $("#menu").css("padding-top", $("header").height() + 45); //Make sure hamburger and logo are visible over menu items
