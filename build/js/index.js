@@ -19,11 +19,11 @@ $(document).ready(function () {
 
     var mobile = (WURFL.form_factor != 'Desktop' && WURFL.form_factor != 'Tablet');
 
-    if (WURFL.form_factor == "Smartphone") { // If on smartphone, make sections 0.15 times taller. Won't apply if scrollify set height is true
-        $(".fullscreen").height(window.innerHeight * 1.15);
-    } else {
-        $(".fullscreen").height(window.innerHeight);
-    }
+    // if (WURFL.form_factor == "Smartphone") { // If on smartphone, make sections 0.15 times taller. Won't apply if scrollify set height is true
+    //     $(".fullscreen").height(window.innerHeight * 1.15);
+    // } else {
+    //     $(".fullscreen").height(window.innerHeight);
+    // }
 
     $("#menu").css("padding-top", $("header").height());
 
@@ -34,8 +34,8 @@ $(document).ready(function () {
     if (mobile || window.innerWidth < 479) {
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
-        $.scrollify.disable();
-        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullscreen">');
+        // $.scrollify.disable();
+        // $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image fullscreen">');
     } else {
         $('.enable-on-mobile').hide();
         $('.hide-on-mobile').show();
@@ -50,19 +50,19 @@ $(document).ready(function () {
         }
 
 
-        // $("#menu").css("padding-top", $("header").height() + 45); //Make sure hamburger and logo are visible over menu items
+        $("#menu").css("padding-top", $("header").height() + 45); //Make sure hamburger and logo are visible over menu items
 
-        // if (mobile || window.innerWidth < 479) {
-        //     $('.enable-on-mobile').show();
-        //     $('.hide-on-mobile').hide();
-        // } else {
-        //     $('.enable-on-mobile').hide();
-        //     $('.hide-on-mobile').show();
-        //     if (!mobile) {
-        //         EnableDesktopImages();
-        //         $.scrollify.enable();
-        //     }
-        // }
+        if (mobile || window.innerWidth < 479) {
+            $('.enable-on-mobile').show();
+            $('.hide-on-mobile').hide();
+        } else {
+            $('.enable-on-mobile').hide();
+            $('.hide-on-mobile').show();
+            if (!mobile) {
+                EnableDesktopImages();
+                $.scrollify.enable();
+            }
+        }
 
     });
 }); 
