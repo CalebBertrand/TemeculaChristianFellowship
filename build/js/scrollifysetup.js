@@ -8,6 +8,6 @@ $(function() {
 			},
 			after:function() {
 				// $.scrollify.current().children().fadeIn();
-			},
+			}
 		});
 	});

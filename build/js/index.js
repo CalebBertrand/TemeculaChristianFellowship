@@ -4,6 +4,20 @@ $(document).ready(function () {
         $("#menu").fadeToggle(600);
     }
 
+    function resizeBackground() {
+        var newSize;
+
+        if (window.innerWidth > window.innerHeight) {
+            newSize = window.innerWidth;
+
+        } else {
+            newSize = window.innerHeight;
+
+        }
+
+        $(".background-image").width(newSize).height(newSize);
+    }
+
     function EnableDesktopImages() {
         $('#section-1').css('background-image', "url('imgs/mountains.jpg')");
         $('#section-2').css('background-image', "url('imgs/bibleswag.jpg')");
@@ -36,6 +50,7 @@ $(document).ready(function () {
         $('.hide-on-mobile').hide();
         // $.scrollify.disable();
         $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image">');
+        resizeBackground();
     } else {
         $('.enable-on-mobile').hide();
         $('.hide-on-mobile').show();
@@ -53,6 +68,7 @@ $(document).ready(function () {
         if (mobile || window.innerWidth < 479) {
             $('.enable-on-mobile').show();
             $('.hide-on-mobile').hide();
+            resizeBackground();
         } else {
             $('.enable-on-mobile').hide();
             $('.hide-on-mobile').show();
