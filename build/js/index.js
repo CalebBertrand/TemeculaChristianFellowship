@@ -36,7 +36,7 @@ $(document).ready(function () {
     // if (WURFL.form_factor == "Smartphone") { // If on smartphone, make sections 0.15 times taller. Won't apply if scrollify set height is true
     //     $(".fullscreen").height(window.innerHeight * 1.15);
     // } else {
-        $(".fullscreen").height(window.innerHeight);
+        // $(".fullscreen").height(window.innerHeight);
     // }
 
     $("#menu").css("padding-top", $("header").height());
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
 
-        $(".fullscreen").height(window.innerHeight);
+        // $(".fullscreen").height(window.innerHeight); // This messes up the scrollify behavior
 
 
         $("#menu").css("padding-top", $("header").height() + 45); //Make sure hamburger and logo are visible over menu items
