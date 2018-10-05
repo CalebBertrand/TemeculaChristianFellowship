@@ -163,7 +163,9 @@ body#landing .section {
   background-image: url("../imgs/biblestudy.jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 10px 10px 30px -2px #e3e3e3;
+  box-shadow: 10px 10px 30px -2px #e3e3e3; }
 
 .margined {
   width: 80%;
