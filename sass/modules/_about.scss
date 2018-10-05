@@ -1,16 +1,14 @@
 .small-hero {
     @include backgroundImage("../imgs/biblestudy.jpg");
-    background-attachment: fixed;
 }
 .margined {
     width: 80%;
     margin: auto;
     @media screen and (max-width: $mobile_size) {
-            width: 95%;
+        width: 95%;
     }
 }
 .text-section {
     background-color: #f9f9f9;
     letter-spacing: 1px;
-    text-align: justify;
 }

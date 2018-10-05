@@ -163,8 +163,7 @@ body#landing .section {
   background-image: url("../imgs/biblestudy.jpg");
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
 
 .margined {
   width: 80%;
@@ -175,8 +174,7 @@ body#landing .section {
 
 .text-section {
   background-color: #f9f9f9;
-  letter-spacing: 1px;
-  text-align: justify; }
+  letter-spacing: 1px; }
 
 header {
   position: fixed;
