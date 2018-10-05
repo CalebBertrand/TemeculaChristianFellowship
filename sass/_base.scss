@@ -140,10 +140,18 @@ a { color: $contrast-one; }
 .padlight {
     padding: 5px;
 }
+.padheavypercent {
+    padding: 3%;
+}
 
 .block {
     // background-color: rgba(254,254,254, 0.93);
     background-color: transparent;
     // box-shadow: 10px 10px 75px 0px rgba(44, 44, 44, 0.8);
+}
+
+.reverse-color {
+    color: $background-color;
+    background-color: $text-color;
 }
  

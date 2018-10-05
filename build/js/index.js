@@ -38,6 +38,7 @@ $(document).ready(function () {
     // } else {
         // $(".fullscreen").height(window.innerHeight);
     // }
+    $(".small-hero").height(window.innerHeight / 3);
 
     $("#menu").css("padding-top", $("header").height());
 

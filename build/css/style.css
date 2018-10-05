@@ -5,6 +5,7 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,500i,600");
 @media print, screen and (min-width: 40em) {
   .reveal, .reveal.tiny, .reveal.small, .reveal.large {
     right: auto;
@@ -109,8 +110,15 @@ a {
 .padlight {
   padding: 5px; }
 
+.padheavypercent {
+  padding: 3%; }
+
 .block {
   background-color: transparent; }
+
+.reverse-color {
+  color: #f5f6f8;
+  background-color: #3d495a; }
 
 * {
   color: #3d495a; }
@@ -150,6 +158,25 @@ body#landing .section {
   width: 85%;
   height: 85%;
   padding: 2.5%; }
+
+.small-hero {
+  background-image: url("../imgs/biblestudy.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.margined {
+  width: 80%;
+  margin: auto; }
+  @media screen and (max-width: 479px) {
+    .margined {
+      width: 95%; } }
+
+.text-section {
+  background-color: #f9f9f9;
+  letter-spacing: 1px;
+  text-align: justify; }
 
 header {
   position: fixed;
