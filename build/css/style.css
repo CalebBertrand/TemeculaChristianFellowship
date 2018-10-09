@@ -225,6 +225,21 @@ header {
       color: #c4c4c4;
       font-size: 5vmin; }
 
+#back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #f5f6f8;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 50px -2px #c8c8c8;
+  box-shadow: 0px 0px 50px -2px #c8c8c8;
+  padding: 5px; }
+  #back * {
+    padding-bottom: 0px;
+    text-align: center;
+    text-anchor: middle;
+    color: #3d495a; }
+
 .custom-button {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
