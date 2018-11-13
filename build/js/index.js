@@ -47,7 +47,7 @@ $(document).ready(function () {
         $(".section, .small-hero").css("background-attachment", "fixed");
     }
 
-    if ( window.innerWidth < 479) { //ADD MOBILE BACK
+    if (mobile || window.innerWidth < 479) {
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
         // $.scrollify.disable();
