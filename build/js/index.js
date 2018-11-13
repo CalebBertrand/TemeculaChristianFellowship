@@ -14,7 +14,8 @@ $(document).ready(function () {
             newSize = window.innerHeight;
 
         }
-
+        console.log(newSize);
+        
         $(".background-image").width(newSize).height(newSize);
     }
 
@@ -46,11 +47,11 @@ $(document).ready(function () {
         $(".section, .small-hero").css("background-attachment", "fixed");
     }
 
-    if (mobile || window.innerWidth < 479) {
+    if ( window.innerWidth < 479) { //ADD MOBILE BACK
         $('.enable-on-mobile').show();
         $('.hide-on-mobile').hide();
         // $.scrollify.disable();
-        $('#section-1').prepend('<img src="imgs/mobilewoodwall.jpg" class="enable-on-mobile background-image">');
+        $('body').prepend('<img src="imgs/mobilemountains.png" class="enable-on-mobile background-image">');
         resizeBackground();
     } else {
         $('.enable-on-mobile').hide();
